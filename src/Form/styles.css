@@ -1,0 +1,57 @@
+button {
+    padding: 0.25em 0.5em;
+    border:1px outset var(--secondary-color);
+    border-radius: 0.5em;
+    cursor: pointer;
+    &:active {
+        border-style: inset;
+    }
+    &.selected {
+        border:1px outset var(--success-color);
+        background-color: var(--success-color);
+        color: var(--primary-color);
+    }
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.25em;
+    grid-template-rows: auto;
+    >* {
+        border: 1px solid #c0c0c0;
+        border-radius: 0.25em;
+        >header {
+            background: #303030;
+            border-radius: 0.25em;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            text-align: center;
+        }
+        >section {
+            padding:0.25em;
+        }
+    }
+    label {margin-right: 0.25em}
+    input {
+        background-color: rgba(0,0,0,0.4);
+        border: 1px inset #c0c0c0;
+        border-radius: 0.25em;
+        padding:0.25em 0.5em;
+        color: var(--primary-color);
+    }
+}
+
+.dependents {
+    grid-row: 2;
+    grid-column: 1 / 2 span;
+}
+
+.plans  {
+    >section {
+        display: flex;
+        flex-direction: row;
+        gap: 0.25em;
+        flex-wrap: wrap;
+    }
+}

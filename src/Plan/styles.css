@@ -1,0 +1,17 @@
+.plan {
+    border: 1px solid #c0c0c0;
+    border-radius: 0.25em;
+    padding:0px !important;
+    
+    >header {
+        background: #303030;
+        border-radius: 0.25em;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        text-align: center;
+        padding:0.25em;
+    }
+    >section {
+        padding:0.25em;
+    }
+}

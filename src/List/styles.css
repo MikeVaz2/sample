@@ -1,0 +1,42 @@
+  
+.list {
+
+
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: var(--dt-border-radius);
+  color: var(--dt-text-color);
+  margin: 0 auto;
+  font-size: 12px;
+  opacity: 0.8;
+  width:100%;
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-right:1px solid #c0c0c0;
+    border-bottom: 1px solid #c0c0c0;
+    tr:nth-of-type(n+1) {
+      td {
+        background: #080808;
+      }
+    }
+    td {
+      padding: 0.25em 0.5em;
+      border-top:1px solid #c0c0c0;
+      border-left: 1px solid #c0c0c0;
+      background: #111111;
+      cursor: pointer;
+    }
+
+    tr:hover {
+      td {
+        background-color:var(--highlight-color);
+        color: black;
+      }
+    }
+  }
+
+}
+  
+
+ 

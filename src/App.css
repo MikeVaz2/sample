@@ -1,0 +1,18 @@
+body, * {
+  box-sizing: border-box;
+  padding: 0;
+  margin:0;
+  border:0;
+}
+
+body { 
+  padding: 2em;
+  --primary-color: white;
+  --secondary-color-rgb: 15, 15, 15;
+  --secondary-color: black;
+  --highlight-color: #3282b8;
+  --success-color: #00b832;
+  background: var(--secondary-color);
+  color: var(--primary-color); 
+}
+
